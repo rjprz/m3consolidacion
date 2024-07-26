@@ -1,0 +1,13 @@
+@media(min-width: 576px){
+  body{
+    background-color: bisque;
+  }
+  .chat__texts{
+    background-color: black;
+  }
+  .chats-recientes {
+ 
+    transform: translateY(0);
+    
+  }
+}
