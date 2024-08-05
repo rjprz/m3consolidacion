@@ -63,6 +63,17 @@ main {
   display: none;
 }
 
+.navbar__search{
+  display: none;
+}
+
+.navbar__search input{
+  height: 1.5rem;
+  border-radius: 7px;
+  border: none;
+  padding-left: 0.5rem;
+}
+
 .navbar__options {
   display: none;
 }
@@ -110,7 +121,7 @@ main {
 /* VENTANA CHAT */
 .chat {
   height: 100vh;
-  width: 100%;
+  width: 100vw;
   background-color: aquamarine;
   display: flex;
   flex-direction: column;
@@ -134,10 +145,26 @@ main {
   width: auto;
   border-radius: 50%;
 }
+
 .chat__usuario-datos h2 {
   color: #ecfeff;
   font-size: 1.2rem;
   font-weight: 400;
+}
+
+.chat__usuario-options{
+  height: 70%;
+  align-self: flex-end;
+}
+.chat__usuario-options svg {
+  height: 70%;
+  color: #ecfeff;
+}
+
+.chat__usuario-info{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
 }
 
 .chat__texts-container {
@@ -227,8 +254,53 @@ main {
 }
 
 .chat-recientes__chats {
-  flex-basis: 5rem;
   background-color: #a5f3fc;
   flex-shrink: 0;
   border-top: 3px solid #ecfeff;
+  display: flex;
+  height: 5rem;
+  align-items: center;
+  padding-left: 0.8rem;
+  padding-right: 0.8rem;
+  /* background-color: #083344; */
+  gap: 1rem;
+  font-weight: 700;
+}
+
+.chats-recientes-datos h2 {
+  color: #083344;
+  font-size: 1.2rem;
+  margin-bottom: 0.2rem;
+  /* font-weight: bold; */
+}
+.chats-recientes-datos p {
+  color: #0e7490;
+}
+
+.chats-recientes-datos{
+  flex-grow: 1;
+  
+}
+.nombre-hora{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.chats-recientes-hora{
+  display: inline-block;
+  color: #0e7490;
+  font-weight: 400;
+}
+
+/* 
+#ecfeff
+#a5f3fc
+#22d3ee
+#0e7490
+#083344
+*/
+
+#chat1{
+  font-weight: 400;
 }

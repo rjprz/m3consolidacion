@@ -46,6 +46,10 @@
             </svg>
           </div>
 
+          <div class="navbar__search">
+            <input type="text" placeholder="Buscar chat" />
+          </div>
+
           <div class="navbar__menu">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -72,7 +76,7 @@
             <li>Calendario</li>
             <li>Administrar perfil</li>
             <li>Organigrama</li>
-            <li>Chat vendedores y soporte</li>
+            <li>Chat</li>
           </ul>
         </div>
       </nav>
@@ -81,13 +85,28 @@
       <section class="chat">
         <article class="chat__usuario">
           <div class="chat__usuario-foto">
-            <img src="assets/img/usuario1.jpg" alt="">
+            <img src="assets/img/usuario1.jpg" alt="" />
           </div>
-          <div class="chat__usuario-datos">
-            <h2>Grumpy Cat</h2>
-          </div>
-          <div class="chat__usuario-options">
-            
+          <div class="chat__usuario-info">
+            <div class="chat__usuario-datos">
+              <h2>Grumpy Cat</h2>
+            </div>
+            <div class="chat__usuario-options">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="size-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M12 6.75a.75.75 0 1 1 0-1.5.75.75 0 0 1 0 1.5ZM12 12.75a.75.75 0 1 1 0-1.5.75.75 0 0 1 0 1.5ZM12 18.75a.75.75 0 1 1 0-1.5.75.75 0 0 1 0 1.5Z"
+                />
+              </svg>
+            </div>
           </div>
         </article>
         <article class="chat__texts-container">
@@ -109,7 +128,6 @@
             <div class="chat__texts-in">15</div>
             <div class="chat__texts-out">16</div>
             <div class="chat__texts-in">17</div>
-            
           </div>
         </article>
         <article class="chat__input">
@@ -150,45 +168,152 @@
       <!-- CHATS RECIENTES -->
       <aside class="chats-recientes-contenedor">
         <div class="chats-recientes">
-          <article class="chat-recientes__chats">
-            <p>hola soy pepito el lorem</p>
+          <article class="chat-recientes__chats" id="chat1">
+            <div class="chat__usuario-foto">
+              <img src="assets/img/usuario1.jpg" alt="" />
+            </div>
+            <div class="chats-recientes-datos">
+              <div class="nombre-hora">
+                <h2>Grumpy Cat</h2>
+                <p class="chats-recientes-hora">08:59 am</p>
+              </div>
+              <p>Hola soy el ultimo texto</p>
+            </div>
           </article>
           <article class="chat-recientes__chats">
-            <p>hola soy pepito el lorem</p>
+            <div class="chat__usuario-foto">
+              <img src="assets/img/usuario1.jpg" alt="" />
+            </div>
+            <div class="chats-recientes-datos">
+              <div class="nombre-hora">
+                <h2>USUARIO 2</h2>
+                <p class="chats-recientes-hora">08:59 am</p>
+              </div>
+              <p>Hola soy el ultimo texto</p>
+            </div>
           </article>
           <article class="chat-recientes__chats">
-            <p>hola soy pepito el lorem</p>
+            <div class="chat__usuario-foto">
+              <img src="assets/img/usuario1.jpg" alt="" />
+            </div>
+            <div class="chats-recientes-datos">
+              <div class="nombre-hora">
+                <h2>Grumpy Cat</h2>
+                <p class="chats-recientes-hora">08:59 am</p>
+              </div>
+              <p>Hola soy el ultimo texto</p>
+            </div>
           </article>
           <article class="chat-recientes__chats">
-            <p>hola soy pepito el lorem</p>
+            <div class="chat__usuario-foto">
+              <img src="assets/img/usuario1.jpg" alt="" />
+            </div>
+            <div class="chats-recientes-datos">
+              <div class="nombre-hora">
+                <h2>Grumpy Cat</h2>
+                <p class="chats-recientes-hora">08:59 am</p>
+              </div>
+              <p>Hola soy el ultimo texto</p>
+            </div>
           </article>
           <article class="chat-recientes__chats">
-            <p>hola soy pepito el lorem</p>
+            <div class="chat__usuario-foto">
+              <img src="assets/img/usuario1.jpg" alt="" />
+            </div>
+            <div class="chats-recientes-datos">
+              <div class="nombre-hora">
+                <h2>Grumpy Cat</h2>
+                <p class="chats-recientes-hora">08:59 am</p>
+              </div>
+              <p>Hola soy el ultimo texto</p>
+            </div>
           </article>
           <article class="chat-recientes__chats">
-            <p>hola soy pepito el lorem</p>
+            <div class="chat__usuario-foto">
+              <img src="assets/img/usuario1.jpg" alt="" />
+            </div>
+            <div class="chats-recientes-datos">
+              <div class="nombre-hora">
+                <h2>Grumpy Cat</h2>
+                <p class="chats-recientes-hora">08:59 am</p>
+              </div>
+              <p>Hola soy el ultimo texto</p>
+            </div>
           </article>
           <article class="chat-recientes__chats">
-            <p>hola soy pepito el lorem</p>
+            <div class="chat__usuario-foto">
+              <img src="assets/img/usuario1.jpg" alt="" />
+            </div>
+            <div class="chats-recientes-datos">
+              <div class="nombre-hora">
+                <h2>Grumpy Cat</h2>
+                <p class="chats-recientes-hora">08:59 am</p>
+              </div>
+              <p>Hola soy el ultimo texto</p>
+            </div>
           </article>
           <article class="chat-recientes__chats">
-            <p>hola soy pepito el lorem</p>
+            <div class="chat__usuario-foto">
+              <img src="assets/img/usuario1.jpg" alt="" />
+            </div>
+            <div class="chats-recientes-datos">
+              <div class="nombre-hora">
+                <h2>Grumpy Cat</h2>
+                <p class="chats-recientes-hora">08:59 am</p>
+              </div>
+              <p>Hola soy el ultimo texto</p>
+            </div>
           </article>
           <article class="chat-recientes__chats">
-            <p>hola soy pepito el lorem</p>
+            <div class="chat__usuario-foto">
+              <img src="assets/img/usuario1.jpg" alt="" />
+            </div>
+            <div class="chats-recientes-datos">
+              <div class="nombre-hora">
+                <h2>Grumpy Cat</h2>
+                <p class="chats-recientes-hora">08:59 am</p>
+              </div>
+              <p>Hola soy el ultimo texto</p>
+            </div>
           </article>
           <article class="chat-recientes__chats">
-            <p>hola soy pepito el lorem</p>
+            <div class="chat__usuario-foto">
+              <img src="assets/img/usuario1.jpg" alt="" />
+            </div>
+            <div class="chats-recientes-datos">
+              <div class="nombre-hora">
+                <h2>Grumpy Cat</h2>
+                <p class="chats-recientes-hora">08:59 am</p>
+              </div>
+              <p>Hola soy el ultimo texto</p>
+            </div>
           </article>
           <article class="chat-recientes__chats">
-            <p>hola soy pepito el lorem</p>
+            <div class="chat__usuario-foto">
+              <img src="assets/img/usuario1.jpg" alt="" />
+            </div>
+            <div class="chats-recientes-datos">
+              <div class="nombre-hora">
+                <h2>Grumpy Cat</h2>
+                <p class="chats-recientes-hora">08:59 am</p>
+              </div>
+              <p>Hola soy el ultimo texto</p>
+            </div>
           </article>
           <article class="chat-recientes__chats">
-            <p>hola soy pepito el lorem</p>
+            <div class="chat__usuario-foto">
+              <img src="assets/img/usuario1.jpg" alt="" />
+            </div>
+            <div class="chats-recientes-datos">
+              <div class="nombre-hora">
+                <h2>Grumpy Cat</h2>
+                <p class="chats-recientes-hora">08:59 am</p>
+              </div>
+              <p>Hola soy el ultimo texto</p>
+            </div>
           </article>
-          <article class="chat-recientes__chats">
-            <p>hola soy pepito el lorem</p>
-          </article>
+          
+        
         </div>
       </aside>
     </main>
