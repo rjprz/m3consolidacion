@@ -52,12 +52,10 @@
   .navbar__options-list li:hover {
     color: #22d3ee;
   }
-  #chat1{
-    background-color:#0e7490 ;
+  .chat__texts-size{
+    max-width: 350px;
   }
-  #chat1 p{
-    color: #ecfeff ;
-  }
+  
 }
 
 /* colores

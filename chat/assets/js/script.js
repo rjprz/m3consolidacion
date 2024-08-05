@@ -8,6 +8,9 @@ const menu = document.querySelector(".navbar__menu");
 const navbar = document.querySelector("nav");
 const  chatRecientes = document.querySelectorAll(".chat-recientes__chats")
 
+const dropDownButton = document.querySelector(".chat__icon-clip")
+const dropDownMenu = document.querySelector(".chat__drop-down")
+
 chatIcon.addEventListener("click", function () {
   chatIcon.style.display = "none";
   chatSearch.style.display = "block";
@@ -33,3 +36,10 @@ chatRecientes.forEach((chat) => {
     console.log(chat);
   });
 });
+
+dropDownButton.addEventListener("mouseover", function(){
+  dropDownMenu.style.display = "block";
+})
+dropDownButton.addEventListener("mouseout", function(){
+  dropDownMenu.style.display = "none";
+})
