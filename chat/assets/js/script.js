@@ -1,15 +1,18 @@
+//Selectores html 
+
 const chatIcon = document.querySelector(".navbar__chats");
 const chatSearch = document.querySelector(".navbar__search");
 //const chatIcon = document.querySelector(".navbar");
-
 const ventanaChats = document.querySelector(".chats-recientes-contenedor");
 const botonBack = document.querySelector(".navbar__back");
 const menu = document.querySelector(".navbar__menu");
 const navbar = document.querySelector("nav");
 const chatRecientes = document.querySelectorAll(".chat-recientes__chats");
-
 const dropDownButton = document.querySelector(".chat__icon-clip");
 const dropDownMenu = document.querySelector(".chat__drop-down");
+
+
+//FUNCIONES
 
 const ventanaAbajo = function () {
   chatIcon.style.display = "none";
@@ -24,8 +27,10 @@ const ventanaArriba = function () {
   ventanaChats.setAttribute("style", "transform: translateY(-120vh)");
 };
 
-chatIcon.addEventListener("click", ventanaAbajo);
 
+// ESCUCHA DE EVENTOS DE ELEMENTOS HTML
+
+chatIcon.addEventListener("click", ventanaAbajo);
 botonBack.addEventListener("click", ventanaArriba);
 
 menu.addEventListener("click", function () {
@@ -34,9 +39,8 @@ menu.addEventListener("click", function () {
 
 chatRecientes.forEach((chat) => {
   chat.addEventListener("click", function () {
-    console.log("clikiti clak clakkkk ckaaaakasjdahjsd");
-    chat.setAttribute("style", "font-weight: 400;");
-    console.log(chat);
+    // chat.setAttribute("style", "font-weight: 400;");
+    chat.childNodes[3].children[1].setAttribute("style", "font-weight: 400;");
   });
 });
 

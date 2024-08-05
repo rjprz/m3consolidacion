@@ -109,6 +109,10 @@ main {
   justify-content: center;
 }
 
+.navbar__options-list li{
+ cursor: pointer; 
+}
+
 .navbar-open .navbar__options-list li:hover {
   transition: font-size 0.5s ease;
   font-size: 1.35rem;
@@ -232,6 +236,7 @@ main {
   width: 1.8rem;
   height: auto;
   color: #ecfeff;
+  cursor: pointer;
 }
 
 .chat__icon:hover {
@@ -257,6 +262,12 @@ main {
   width: 2rem;
   height: auto;
   color: #a5f3fc;
+  cursor: pointer;
+}
+.drop-down__icon:hover {
+  width: 2rem;
+  height: auto;
+  color: #22d3ee;
 }
 
 /* CHATS RECIENTES */
@@ -291,6 +302,7 @@ main {
   /* background-color: #083344; */
   gap: 1rem;
   font-weight: 700;
+  cursor: pointer;
 }
 
 .chats-recientes-datos h2 {
